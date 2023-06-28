@@ -1,0 +1,130 @@
+* body {
+    background-color: #dcd4d4;
+
+}
+
+.titulo {
+    display: block;
+    position: fixed;
+    background-color: red;
+    color: white;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    align-items: center;
+
+}
+
+.titulo > img {
+    display: inline-block;
+    height: 100%;
+    padding: 0px;
+    margin-top: -15px;
+}
+
+.titulo > h1 {
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 5px;
+    align-self: center;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+#contenedor{
+    justify-content: center;
+    margin: 0px;
+    padding: 70px;
+}
+
+.tarjeta {
+    width: 350px;
+    height: 350px;
+    border: 1px solid red;
+    margin: 0px;
+    padding: auto;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+.contenedor-imagen{
+    justify-content: center;
+    margin-top: 15px;
+    padding: auto;
+    width: 100%;
+    height: 70%;
+}
+
+.contenedor-imagen > img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+
+.lists__pokemons{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.tarjeta > h2::first-letter {
+text-transform: capitalize;
+}
+
+.tarjeta > h2 {
+    display: block;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+}
+
+.tarjeta > p {
+    margin-top: 10px;
+    border-top: 1px solid red;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+
+.tipos {
+    width: 100%;
+    border-top: 1px solid red;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.tipo::first-letter{
+    text-transform: capitalize;
+}
+
+.tipo {
+    border: 1px solid black;
+    width: 25%;
+    margin: auto;
+    padding: auto;
+}
+
+#grass {
+    background-color: green;
+}
+
+#fire {
+    background-color: orange;
+}
+
+#water {
+    background-color: cyan;
+}
+
+#bug {
+    background-color: #8be211d1;
+}
+
+#normal {
+    background-color: grey;
+}
