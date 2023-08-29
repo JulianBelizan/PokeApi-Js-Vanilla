@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+      @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="titulo container-fluid">
-        <img src="img/logo.png" alt="pokemon" srcset=""><h1>Pokedex</h1>
+      <img src="img/logo.png" alt="pokemon" srcset="" />
+      <h1>Pokedex</h1>
     </div>
     <div class="container-fluid row" id="contenedor">
-    <div class="lists__pokemons col-md-12 row" id="lists__pokemons">
+      <div class="lists__pokemons col-md-12 row" id="lists__pokemons"></div>
+      <div class="pagination-buttons">
+        <button id="first-button" class="btn btn-primary">Principio</button>
+        <button id="prev-button" class="btn btn-primary">Anterior</button>
+        <button id="next-button" class="btn btn-primary">Siguiente</button>
+        <button id="last-button" class="btn btn-primary">Final</button>
+      </div>
     </div>
-</div>
+    <!-- Modal -->
+    <div id="pokemonModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalPokemonName" class="pokemon-name">Nombre del Pokémon</h2>
+        <img id="modalPokemonImage" class="pokemon-image" src="" alt="" />
+        <p id="modalPokemonDescription" class="pokemon-description">
+          Descripción del Pokémon
+        </p>
+        <p id="modalPokemonHealth" class="pokemon-stat">
+          Salud:
+          <span id="healthValue">XX</span>
+        </p>
+        <p id="modalPokemonAttack" class="pokemon-stat">
+          Ataque:
+          <span id="attackValue">XX</span>
+        </p>
+        <p id="modalPokemonDefense" class="pokemon-stat">
+          Defensa:
+          <span id="defenseValue">XX</span>
+        </p>
+      </div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

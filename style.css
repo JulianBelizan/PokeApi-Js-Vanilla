@@ -71,6 +71,7 @@
 text-transform: capitalize;
 }
 
+
 .tarjeta > h2 {
     display: block;
     width: 100%;
@@ -79,6 +80,7 @@ text-transform: capitalize;
     text-align: center;
     border-bottom: 1px solid red;
     padding-bottom: 10px;
+    padding-top: 7px;
 }
 
 .tarjeta > p {
@@ -109,22 +111,168 @@ text-transform: capitalize;
     padding: auto;
 }
 
-#grass {
-    background-color: green;
+#normal {
+    background-color: #A8A77A; /* Normal */
 }
 
-#fire {
-    background-color: orange;
+#fighting {
+    background-color: #C22E28; /* Fighting */
 }
 
-#water {
-    background-color: cyan;
+#flying {
+    background-color: #A98FF3; /* Flying */
+}
+
+#poison {
+    background-color: #A33EA1; /* Poison */
+}
+
+#ground {
+    background-color: #E2BF65; /* Ground */
+}
+
+#rock {
+    background-color: #B6A136; /* Rock */
 }
 
 #bug {
-    background-color: #8be211d1;
+    background-color: #A6B91A; /* Bug */
 }
 
-#normal {
-    background-color: grey;
+#ghost {
+    background-color: #735797; /* Ghost */
 }
+
+#steel {
+    background-color: #B7B7CE; /* Steel */
+}
+
+#fire {
+    background-color: #EE8130; /* Fire */
+}
+
+#water {
+    background-color: #6390F0; /* Water */
+}
+
+#grass {
+    background-color: #7AC74C; /* Grass */
+}
+
+#electric {
+    background-color: #F7D02C; /* Electric */
+}
+
+#psychic {
+    background-color: #F95587; /* Psychic */
+}
+
+#ice {
+    background-color: #96D9D6; /* Ice */
+}
+
+#dragon {
+    background-color: #6F35FC; /* Dragon */
+}
+
+#dark {
+    background-color: #705746; /* Dark */
+}
+
+#fairy {
+    background-color: #D685AD; /* Fairy */
+}
+
+#unknown {
+    background-color: #B7B7CE; /* Unknown */
+}
+
+#shadow {
+    background-color: #735797; /* Shadow */
+}
+
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-buttons button:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px; /* Ancho máximo */
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Sombra */
+}
+
+.close {
+    color: #aaa;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+#modalPokemonName {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+#modalPokemonName::first-letter{
+    text-transform: capitalize;
+}
+
+#modalPokemonImage {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+#modalPokemonDescription {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#modalPokemonHealth,
+#modalPokemonAttack,
+#modalPokemonDefense {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Añade más estilos según tu preferencia */
